@@ -1,5 +1,7 @@
-input/
-output/
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
 __pycache__/
 .venv/
 .venv_dataprep/
