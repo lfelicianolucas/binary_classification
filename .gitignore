@@ -1,0 +1,7 @@
+input/
+output/
+__pycache__/
+.venv/
+.venv_dataprep/
+*.zip
+Melhorias.txt
