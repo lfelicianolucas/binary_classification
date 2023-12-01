@@ -2,6 +2,9 @@ input/*
 !input/.gitkeep
 output/*
 !output/.gitkeep
+!output/Análise Exploratória - Features Categóricas.html
+!output/Análise Exploratória - Features Numéricas.html
+!output/Análise Exploratória - Treino - Churn x Não Churn.html
 __pycache__/
 .venv/
 .venv_dataprep/
