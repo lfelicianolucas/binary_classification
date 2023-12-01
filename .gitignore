@@ -2,6 +2,8 @@ input/*
 !input/.gitkeep
 output/*
 !output/.gitkeep
+!output/Análise Exploratória - Gráficos.zip
+!output/Análise Exploratória - Projeto Final.twb
 !output/Análise Exploratória - Features Categóricas.html
 !output/Análise Exploratória - Features Numéricas.html
 !output/Análise Exploratória - Treino - Churn x Não Churn.html
