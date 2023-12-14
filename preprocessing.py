@@ -3,6 +3,7 @@ from typing import List, Tuple
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
+from sklearn.utils import compute_class_weight
 
 
 class TrainingPreProcessor:
@@ -14,6 +15,8 @@ class TrainingPreProcessor:
         self.numeric_standard_scaler = StandardScaler()
         self.categoric_one_hot_encoder = OneHotEncoder()
         self.label_encoder = LabelEncoder()
+
+        self.class_weight = None
 
     def fit(self, df: pd.DataFrame, ignore_columns: List[str] = None) -> None:
         if ignore_columns:
@@ -38,6 +41,12 @@ class TrainingPreProcessor:
             df[self.categoric_features]
         )
         self.label_encoder = self.label_encoder.fit(df[self.target])
+
+        weights = compute_class_weight(
+            "balanced", classes=self.label_encoder.classes_, y=df[self.target]
+        )
+        classes = self.label_encoder.transform(self.label_encoder.classes_)
+        self.class_weight = dict(zip(classes, weights))
 
     def transform(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
         categoric_features = self.categoric_one_hot_encoder.transform(
