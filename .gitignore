@@ -13,3 +13,4 @@ __pycache__/
 *.zip
 Melhorias.txt
 catboost_info/**
+.ipynb_checkpoints/
