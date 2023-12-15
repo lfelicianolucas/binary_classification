@@ -12,3 +12,4 @@ __pycache__/
 .venv_dataprep/
 *.zip
 Melhorias.txt
+catboost_info/**
