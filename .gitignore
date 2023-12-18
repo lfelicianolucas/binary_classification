@@ -14,3 +14,4 @@ __pycache__/
 Melhorias.txt
 catboost_info/**
 .ipynb_checkpoints/
+.vscode/
