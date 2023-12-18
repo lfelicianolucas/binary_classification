@@ -1,17 +1,16 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv_dataprep/
+.venv/
+.vscode/
+*.zip
+catboost_info/
 input/*
 !input/.gitkeep
 output/*
 !output/.gitkeep
-!output/Análise Exploratória - Gráficos.zip
-!output/Análise Exploratória - Projeto Final.twb
 !output/Análise Exploratória - Features Categóricas.html
 !output/Análise Exploratória - Features Numéricas.html
+!output/Análise Exploratória - Gráficos.zip
+!output/Análise Exploratória - Projeto Final.twb
 !output/Análise Exploratória - Treino - Churn x Não Churn.html
-__pycache__/
-.venv/
-.venv_dataprep/
-*.zip
-Melhorias.txt
-catboost_info/**
-.ipynb_checkpoints/
-.vscode/
